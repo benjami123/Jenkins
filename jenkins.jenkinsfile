@@ -11,7 +11,8 @@ pipeline {
             steps {
                 // 
                 sh "./helloWorld"
-                sh "sudo python /home/sah0390/workspaces/ci/ci/Test_auto_for_boot_and_init/main.py -m ROOTFS1 /relay"
+                sh "cd /home/sah0390/workspaces/ci/ci/Test_auto_for_boot_and_init/"
+                sh "sudo python main.py -m ROOTFS1 relay"
             }
         }
     }
