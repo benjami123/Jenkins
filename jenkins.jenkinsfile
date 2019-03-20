@@ -4,13 +4,13 @@ pipeline {
         stage('Build') { 
             steps {
                 // 
-                gcc helloWorld.c -0 helloWorld
+               sh "gcc helloWorld.c -0 helloWorld"
             }
         }
         stage('Test') { 
             steps {
                 // 
-                ./helloWorld
+                sh "./helloWorld"
             }
         }
     }
