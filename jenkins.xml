@@ -1,0 +1,9 @@
+<testsuites>
+	<testsuite>
+		<testcase>
+			<failure>
+				coucou
+			</failure>
+		</testcase>
+	</testsuite>
+</testsuites>
